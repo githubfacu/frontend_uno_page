@@ -1,0 +1,436 @@
+/* Profe: este trabajo esta realizado sobre un viewport de 1536px x 758px
+Tambien te comento que el elemento inpeccionar lo fui trabajando al 50% ajuste de zoom, verlo en otro porcentaje 75 o 100% se desarma todo, todavia estoy aprendiendo a trabajar estas herramientas, espero te guste el codigo saludos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@300;400&display=swap');
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width:100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*************************  header  ***********************************/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+}
+
+header img{
+    width: 120px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    width: 36.5%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header a{
+       color: rgb(36, 46, 82);
+       text-decoration: none;
+}
+
+a:hover{
+    color: rgba(36, 46, 82, 0.6);
+}
+
+button{
+    background-color: #8B48BF;
+    color: #ffffff;
+    border: none;
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+}
+
+/**************************  main  ********************************/
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************  flex  *********************************/
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 78vh;
+}
+
+.flex div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    height: 65%;
+}
+
+h1{
+    width: 100%;
+    height: 40%;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #232C50;
+    padding: 1% 0px;
+    margin: 0%;
+}
+.flex p{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: medium;
+    line-height: 26px;
+    width: 80%;
+    height: 20%;
+    margin-top: 13%;
+    margin-bottom: 4%;
+}
+
+
+/**************************  flexone  ********************************/
+
+.flexone{
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0% 7%;
+    margin-top: 5%;
+}
+.flexone div{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+.flexone h3{
+    font-size: 36px;
+    font-weight: 700;
+    color:#232851;
+    margin-top: 0px;
+}
+.flexone p{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: medium;
+    line-height: 24px;
+    width: 80%;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 41%;
+}
+ol li{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+}
+ol p{    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #B3B2B7;
+}
+
+.cerouno{
+    list-style-image: url("/root/img/Button1.png");
+}
+.cerodos{
+    list-style-image: url("/root/img/Button2.png");
+}
+.cerotres{
+    list-style-image: url("/root/img/Button3.png");
+}
+
+/*********************************  articulos  **************************************/
+
+section.articulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+.articulos h3{
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    color: #242E53;
+    margin-bottom: 0;
+}
+.articulos div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background-color: #FAFAFA;
+}
+h5{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #242E53;
+}
+section.articulos p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    color: #B9B9C1;
+    margin: 0%;
+    width: 86%;
+}
+section.articulos button:hover{
+    background-color: rgba(139, 72, 191, 0.7)
+}
+
+/******************************  prefoot  ***********************************/
+
+section.prefoot{
+    background-color: #8B48BF;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    margin-top: 10%;
+}
+section.prefoot h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-left: 10%;
+    padding-right: 50%;
+}
+section.prefoot button{
+    background-color: #ffffff;
+    color: #8B48BF;
+    position: relative;
+    right: 10%;
+}
+section.prefoot button{
+    width: 13%;
+}
+
+/*********************************  footer  **********************************/
+
+footer{
+    display: flex;
+    height: 25vh;
+    width: 100vw;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    padding-top: 30px;
+}
+.footdiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+footer section div{
+    display: flex;
+    justify-content: space-between;
+}
+.listaone{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 60%;
+    justify-content: space-between;
+}
+.listatwo{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    height: 45%;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+textarea{
+    border-radius: 50px;
+    width: 201px;
+    margin-right: 9px;
+}
+form button{
+    border-radius: 50px;
+    width: 63px;
+}
+h6{
+    z-index: 1;
+    color: #8C8C94;
+    position: absolute;
+    right: 12%;
+    bottom: 15%;
+}
+
+/***************************************  queries  ******************************************/
+
+/* viewport celu*/
+
+
+#burga {
+    display: none;
+}
+
+@media (max-width: 480px){
+    header ul{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    #burga{
+        display: block;
+    }
+
+/*//////////////////////////////// flex /////////////////////////////////////*/
+
+    .flex{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .flex div{
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+    .flex img{
+        margin-left: 5%;
+    }
+    h1{
+        width: 100%;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    .flex p{
+        margin: 7px 0px;
+    }
+    
+/*/////////////////////////////// flexone ////////////////////////////////*/
+
+    .flexone{
+        align-items: center;
+        flex-direction: column;
+    }
+    .flexone div{
+        text-align: center;
+        width: 100%;
+    }
+    .flexone p{
+        width: 100%;
+    }
+    ol li{
+        background-color: #8B48BF4D;
+    }
+    ol{
+        width: 100%;
+    }
+
+    /*////////////////////////////// articulos //////////////////////////////*/
+
+    .articulos p{
+        text-align: center;
+    }
+    article{
+        width: 100%;
+    }
+    #card{
+        display: none;
+    }
+
+    /*///////////////////////////// prefoot ////////////////////////////////*/
+
+    section.prefoot{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        justify-content: space-around;
+    }
+    section.prefoot h2{
+        text-align: center;
+        padding: 0px;
+        width: 73%;
+        margin-bottom: 0%;
+    }
+    section.prefoot button{
+        position: initial;
+        width: 134px;
+    }
+
+    /*/////////////////////////////// footer ///////////////////////////////*/
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+    }
+    .footdiv{
+        flex-direction: column-reverse;
+        position: relative;
+        align-items: center;
+        height: 90%;
+    }
+    textarea{
+        width: 308px;
+    }
+    .footdiv ul{
+        align-self: flex-start;
+    }
+    .listatwo{
+        position: absolute;
+        left: 50%;
+        top: 22%;
+        height: 22%;
+    }
+    .listaone{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .footdiv img{
+        position: absolute;
+        left: 35%;
+        bottom: 8%;
+    }
+    footer section div{
+        margin-top: -10%;
+        margin-bottom: 3%;
+        width: 75vw;
+    }
+    h6{
+        position: initial;
+        margin-bottom: 10%;
+    }
+}
